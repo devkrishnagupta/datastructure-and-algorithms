@@ -34,11 +34,11 @@
 
 ---
 # My Coding Profiles:
-<a href="https://leetcode.com/sagar0_0/">
+<a href="https://leetcode.com/devkrishnagupta/">
 <img src="https://assets.leetcode.com/static_assets/public/webpack_bundles/images/logo-dark.e99485d9b.svg" width=200px>
 </a>
 <br>
 <br>
-<a href="https://auth.geeksforgeeks.org/user/0sagar0/practice">
+<a href="https://auth.geeksforgeeks.org/user/devkrishnagupta/practice">
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200817185016/gfg_complete_logo_2x-min.png" width=200px>
 </a>
