@@ -99,3 +99,75 @@ class Solution
         }
     }
 }
+
+
+
+
+//Approach-2 for isValid Method
+class Solution
+{
+    //Function to find a solved Sudoku. 
+    static boolean SolveSudoku(int grid[][])
+    {
+        // add your code here
+        return solve(0, 0, grid);
+    }
+    
+    static boolean solve(int row, int col, int[][] grid){
+        int m=grid.length, n=grid[0].length;
+        if(row==m)return true;
+        int Nrow=0;
+        int Ncol=0;
+        if(col==n-1){
+            Nrow=row+1;
+            Ncol=0;
+        }else{
+            Nrow=row;
+            Ncol=col+1;
+        }
+        if(grid[row][col]==0){
+            for(int num=1;num<=9;num++){
+                if(isValid(grid, num, row, col)){
+                    grid[row][col]=num;
+                    if(solve(Nrow, Ncol, grid))
+                        return true;
+                    grid[row][col]=0;
+                }
+            }   
+        }else{
+            if(solve(Nrow, Ncol, grid))
+                return true;
+        }
+        return false;
+    }
+    
+    static boolean isValid(int[][] grid, int num, int row, int col){
+        int N = grid.length;
+        for(int i=0; i<N; i++){
+            if(grid[row][i] == num) return false;
+            if(grid[i][col] == num) return false;
+        }
+        int sr = row;
+        while(sr%3!=0)sr--;
+        int sc = col;
+        while(sc%3!=0)sc--;
+        for(int i= sr; i< sr+3; i++){
+            for(int j=sc; j< sc+3; j++){
+                if(grid[i][j] == num) return false;
+            }
+        }
+        return true;
+    }
+    
+    //Function to print grids of the Sudoku.
+    static void printGrid (int grid[][])
+    {
+        int m=grid.length, n=grid[0].length;
+        // add your code here
+        for(int row=0;row<m;row++){
+            for(int col=0;col<n;col++){
+                System.out.print(grid[row][col]+" ");
+            }
+        }
+    }
+}
