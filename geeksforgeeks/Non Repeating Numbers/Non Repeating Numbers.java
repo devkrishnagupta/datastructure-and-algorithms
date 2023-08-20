@@ -55,9 +55,9 @@ class Solution
                 i++;
             }
         }
-        if(ans[1]==-1)
+        if(ans[1]==-1)//for last element
             ans[1]=nums[nums.length-1];
-        if(ans[0]>ans[1]){
+        if(ans[0]>ans[1]){//for sorting
             int temp=ans[0];
             ans[0]=ans[1];
             ans[1]=temp;
@@ -93,4 +93,27 @@ class Solution
     }
 }
 
-//Approach-3
+//Approach-3 (Using xor of all & then right most set of of all xor and finding different of rmsb is 1 or 0)
+//Time => o(N)
+//Space => o(1)
+class Solution
+{
+    public int[] singleNumber(int[] nums)
+    {
+        // Code here
+        int xor=0;//xor of all numbers
+        for(int val: nums){
+            xor= xor ^ val;
+        }
+        int rmsb=xor & ~(xor-1);//right most set bit of result
+        int x=0;
+        int y=0;
+        for(int val: nums){
+            if((val & rmsb)==0)
+                x=x^val;
+            else
+                y=y^val;
+        }
+        return x>y ? new int[]{y, x} : new int[]{x, y};
+    }
+}
