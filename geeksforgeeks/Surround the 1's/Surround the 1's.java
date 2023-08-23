@@ -68,3 +68,34 @@ class Solution
         return ans;
     }
 }
+
+//Approach-2
+//Time => n*m
+class Solution
+{
+    public int  Count(int[][] matrix)
+    {
+        // code here
+        int ans=0;
+        int n=matrix.length;
+        int m=matrix[0].length;
+        int[][] dir=new int[][]{{0,1}, {0, -1}, {1, 0}, {-1, 0}, {1, 1}, {1, -1}, {-1, 1}, {-1, -1}};
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                if(matrix[i][j]==1){
+                    int count=0;
+                    for(int k=0;k<8;k++){
+                        int row=i+dir[k][0];
+                        int column=j+dir[k][1];
+                        if(row >=0 && column>= 0 && row < n && column < m && matrix[row][column]==0)
+                            count++;
+                    }
+                    if(count%2==0 && count > 0)
+                        ans++;
+                }
+            }
+
+        }
+        return ans;
+    }
+}

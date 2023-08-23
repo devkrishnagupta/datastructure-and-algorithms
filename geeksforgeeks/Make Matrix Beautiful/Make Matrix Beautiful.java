@@ -66,7 +66,37 @@ class GFG {
 // } Driver Code Ends
 
 
+//Approach-1
+class Solution {
+    public static int findMinOperation(int N, int[][] mat) {
+        // code here'
+        int n =mat.length, m = mat[0].length;
+        int r[] = new int[n]; 
+        int c[] = new int[n];
+        int max=0;
+        for(int i=0; i<n; i++) {
+            for(int j=0; j<m; j++) {
+                
+                r[i] += mat[i][j];
+                max = Math.max(max, r[i]);
+                
+                c[i] += mat[j][i];
+                max = Math.max(max, c[i]);
+            }
+        }
+        int res=0;
+        for(int i=0; i<n; i++)
+        {
+            r[i] =  max - r[i];
+            res += r[i];
+            //  c[i] =  max - c[i];//optional
+            // res += c[i];
+        }
+        return res;
+    }
+}
 
+//Approach-2
 class Solution {
     public static int findMinOperation(int N, int[][] mat) {
         // code here'
@@ -96,4 +126,3 @@ class Solution {
         return res;
     }
 }
-        
