@@ -61,3 +61,34 @@ class Solution {
         return ans;
     }
 }
+
+class Solution {
+    public int longestkSubstr(String s, int k) {
+        HashMap<Character, Integer> map=new HashMap<>();
+        int i=0,j=0,ans=0,n=s.length(), uniq_ch=0;
+        while(j<n){
+            while(j<n){
+                char ch=s.charAt(j);
+                if(!map.containsKey(ch) || map.get(ch)==0)
+                    uniq_ch++;
+                map.put(ch, map.getOrDefault(ch, 0)+1);
+                if(uniq_ch>k)break;
+                j++;
+            }
+            if(uniq_ch>=k)
+                ans=Math.max(ans, j-i);//as j is not increment at above statement j++
+            if(j==n)break;
+            while(i<n){
+                char ch=s.charAt(i);
+                if(map.get(ch)==1)
+                    uniq_ch--;
+                map.put(ch, map.get(ch)-1);
+                if(uniq_ch==k)break;
+                i++;
+            }
+            i++;
+            j++;
+        }
+        return ans==0 ? -1 : ans;
+    }
+}
