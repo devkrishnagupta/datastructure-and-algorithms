@@ -84,15 +84,15 @@ class Solution
         return res;
         
     }
-boolean dfs(char[][] grid, int n, int m,  String word, int idx, int x, int y, int nei_x, int nei_y)
-{
-    if (idx == word.length())
-    return true; // we find the entire word
-    
-    //check in bound
-    if(x>=0 && x<n && y>=0 && y<m && word.charAt(idx) == grid[x][y]){
-        return dfs(grid, n, m, word, idx+1, x+nei_x, y+nei_y,nei_x, nei_y);
+    boolean dfs(char[][] grid, int n, int m,  String word, int idx, int x, int y, int nei_x, int nei_y)
+    {
+        if (idx == word.length())
+        return true; // we find the entire word
+        
+        //check in bound
+        if(x>=0 && x<n && y>=0 && y<m && word.charAt(idx) == grid[x][y]){
+            return dfs(grid, n, m, word, idx+1, x+nei_x, y+nei_y,nei_x, nei_y);
+        }
+        return false;
     }
-    return false;
-}
 }
