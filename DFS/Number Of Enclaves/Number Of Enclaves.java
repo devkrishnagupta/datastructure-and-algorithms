@@ -54,14 +54,10 @@ class Solution {
         boolean[][] vis = new boolean[n][m];
         for(int i=0;i<n;i++){
             dfs(grid, i, 0, n, m, vis);
-        }
-        for(int i=0;i<n;i++){
             dfs(grid, i, m-1, n, m, vis);
         }
         for(int i=0;i<m;i++){
             dfs(grid, 0, i, n, m, vis);
-        }
-        for(int i=0;i<m;i++){
             dfs(grid, n-1, i, n, m, vis);
         }
         for(int i=1;i<n-1;i++){
