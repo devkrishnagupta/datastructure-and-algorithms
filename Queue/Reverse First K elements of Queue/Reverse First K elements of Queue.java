@@ -74,3 +74,26 @@ class GfG {
         return ans;
     }
 }
+
+//Approach-1
+//Time N
+//Space K
+class GfG {
+    // Function to reverse first k elements of a queue.
+    public Queue<Integer> modifyQueue(Queue<Integer> q, int k) {
+        // add code here.
+        Stack<Integer> st = new Stack<>();
+        int K = q.size() - k;
+        while(k-- > 0){
+            st.push(q.remove());
+        }
+        while(!st.isEmpty()){
+            q.add(st.pop());
+        }
+        while(K-- > 0){
+            int el = q.remove();
+            q.add(el);
+        }
+        return q;
+    }
+}
