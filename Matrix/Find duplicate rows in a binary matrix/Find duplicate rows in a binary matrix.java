@@ -34,6 +34,8 @@
 //User function Template for Java
 
 //Approach -1 (Using key as string)
+//T.C : O(m * n)
+//S.C : O(n)
 class Solution
 {
     public static ArrayList<Integer> repeatedRows(int matrix[][], int m, int n)
@@ -55,6 +57,8 @@ class Solution
 }
 
 //Approach - 2 (Using Decimal number as key which is made by each row) (1 << x means 1*2^x)
+//T.C : O(m * n)
+//S.C : O(m)
 class Solution
 {
     public static ArrayList<Integer> repeatedRows(int matrix[][], int m, int n)
