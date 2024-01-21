@@ -1,5 +1,5 @@
 # Vertex Cover
-## Medium
+## Hard
 <div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;"><strong>Vertex cover </strong>of an undirected graph is a list of vertices such that every vertex not in the vertex cover shares their every edge with the vertices in the <strong>vertex cover</strong>. In other words, for every edge in the graph, atleast one of the endpoints of the graph should belong to the <strong>vertex cover</strong>. You will be given an undirected graph <strong>G</strong>, and your task is to determine the <strong>smallest possible size </strong>of a <strong>vertex cover.</strong></span></p>
 <p><strong><span style="font-size: 18px;">Example 1:</span></strong></p>
 <pre><span style="font-size: 18px;"><strong>Input:</strong><code>
