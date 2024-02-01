@@ -28,7 +28,7 @@ class Solution {
 // Previous Smaller element
 
 // Approach-2 (Using Stack) Next greater element in array on right side
-// T.C : O(2 * n) ~ O(n)
+// T.C : O(2 * n) ~ O(n) ~ every element pushed to stack at only one time
 // S.C : O(1)
 class Solution {
     public int[] dailyTemperatures(int[] temperatures) {
