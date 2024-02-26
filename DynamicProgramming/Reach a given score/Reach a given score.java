@@ -43,7 +43,31 @@ class Geeks {
     }
 }
 
-// Approach-2 (for combination we are using the sequence in increasing order)
+// Approach-2 (Recursion) (for combination we are using the sequence in increasing order)
+// T.C : O(3 ^ n)
+// S.C : O(3 ^ n)
+// Note: This code is working correctly
+class Geeks {
+
+    public long count(int n) {
+        return solve(0, n, true, true);
+    }
+
+    public long solve(int sum, int n, boolean t1, boolean t2) {
+        if (sum > n) return 0;  // Corrected termination condition
+        if (sum == n) return 1;
+
+        long n1 = t1 ? solve(sum + 3, n, true, true) : 0;
+        long n2 = t2 ? solve(sum + 5, n, false, true) : 0;
+        long n3 = solve(sum + 10, n, false, false);
+
+        long result = n1 + n2 + n3;
+        
+        return result;
+    }
+}
+
+// Approach-3 (Recursion + Memorization) (for combination we are using the sequence in increasing order)
 // T.C : 
 // S.C :
 // Note: This code is working correctly
@@ -56,7 +80,7 @@ class Geeks {
     }
 
     public long solve(int sum, int n, boolean t1, boolean t2) {
-        if (sum >= n) return 0;  // Corrected termination condition
+        if (sum > n) return 0;  // Corrected termination condition
         if (sum == n) return 1;
 
         String key = sum + "-" + t1 + "-" + t2;
