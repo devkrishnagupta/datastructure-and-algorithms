@@ -107,7 +107,6 @@ class Solution {
             for(int j = 0; j < n; j++){
                 if((arr[j] & (1 << i)) != 0)    // check with I'th bit is set
                     cnt++;
-                    
             }
             
             // all permuatations
