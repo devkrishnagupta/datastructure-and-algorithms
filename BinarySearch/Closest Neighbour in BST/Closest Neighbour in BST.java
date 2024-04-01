@@ -109,6 +109,39 @@ class GfG {
     }
 
 }*/
+
+// Approach-1
+// T.C : O(n)
+// S.C : O(Height of tree)
+class Solution {
+    static int ans;
+    
+    public static int findMaxForN(Node root, int n) {
+        // Add your code here.
+        // Add your code here.
+        ans = Integer.MIN_VALUE;
+        solve(root, n);
+        return ans==Integer.MIN_VALUE?-1:ans;
+    }
+    
+    public static void solve(Node root, int n){
+        if(root == null){
+            return;
+        }
+        if(root.key == n){
+            ans = n;
+        }else if(root.key < n){
+            ans = Math.max(ans, root.key);
+            solve(root.right, n);
+        }else{
+            solve(root.left, n);
+        }
+    }
+}
+
+// Approach-2
+// T.C : O(n)
+// S.C : O(1)
 class Solution {
     
     public static int findMaxForN(Node root, int n) {
