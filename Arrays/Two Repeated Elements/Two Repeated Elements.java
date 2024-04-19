@@ -57,3 +57,7 @@ class Solution
     }
     
 }
+
+// Approach-2
+// T.C : O(n)
+// S.C : O(1)
