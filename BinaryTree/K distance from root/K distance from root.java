@@ -143,10 +143,41 @@ class Tree
                     q.add(curr.right);
                 }
               }
-              
+              if(label == k){
+                break;
+              }
               label++;
           }
           
           return ans;
+     }
+}
+
+// Approach-2
+// T.C : O(n)
+// S.C : O(Height of the tree)
+class Tree
+{
+     // Recursive function to print right view of a binary tree.
+     ArrayList<Integer> Kdistance(Node root, int k)
+     {
+          // Your code here
+          ArrayList<Integer> ans = new ArrayList<>();
+          int label = 0;
+          
+          dfs(root, ans, k, label);
+          
+          return ans;
+     }
+     
+     void dfs(Node root, ArrayList<Integer> al, int k, int label){
+         if(root == null)
+            return;
+         if(k == label){
+            al.add(root.data);
+         }else{
+             dfs(root.left, al, k, label + 1);
+             dfs(root.right, al, k, label + 1);
+         }
      }
 }
