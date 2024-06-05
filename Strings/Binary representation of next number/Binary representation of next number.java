@@ -1,6 +1,6 @@
 // Approach-1
 // T.C : O(n)
-// S.C : O(n)   ~   to store the result only
+// S.C : O(n)
 class Solution {
     String binaryNextNumber(String s) {
         // code here.
@@ -27,3 +27,7 @@ class Solution {
         return ans.toString();
     }
 }
+
+// Approach-2
+// T.C : O(n)
+// S.C : O(n)   ~   to store the result only
