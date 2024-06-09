@@ -1,5 +1,5 @@
 // Approach-1
-// T.C : O(logN)
+// T.C : O()
 // S.C : O(1)
 class Solution {
   public:
