@@ -16,3 +16,7 @@ class Solution {
         return moves;
     }
 }
+
+// Approach-1 (Using Map)
+// T.C : O(n * logN)
+// S.C : O()
