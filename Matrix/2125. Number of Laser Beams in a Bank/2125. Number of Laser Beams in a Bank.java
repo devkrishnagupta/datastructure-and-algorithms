@@ -1,3 +1,6 @@
+// Approach-1
+// T.C : O()
+// S.C : O()
 class Solution {
     public static int numberOfBeams(String[] bank) {
         int n = bank.length;
