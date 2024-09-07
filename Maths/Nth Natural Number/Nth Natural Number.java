@@ -31,17 +31,16 @@ class Solution {
 // T.C : O(n)
 // S.C : O(1)
 class Solution {
-    public:
-      long long findNth(long long n) {
-          // CodeGenius
-          long long ans=0;
-          long long p=1;
-          
-          while(n>0){
-              ans+=p*(n%9);
-              n/=9;
-              p*=10;
-          }
-          return ans;
-      }
-  };
+    long findNth(long n) {
+        // code here
+        long ans=0;
+        long p=1;
+        
+        while(n>0){
+            ans+=p*(n%9);
+            n/=9;
+            p*=10;
+        }
+        return ans;
+    }
+}
