@@ -1,0 +1,10 @@
+# Rotate by 90 degree
+## Medium
+<div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">Given a<strong> </strong>square&nbsp;<strong>mat[][]</strong>. The task is to rotate it by<strong> 90 degrees in clockwise</strong> direction without using any extra space.</span></p>
+<p><span style="font-size: 18px;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 18px;"><strong>Input: </strong>mat[][] = [[1 2 3], [4 5 6], [7 8 9]]
+<strong>Output:</strong>
+7 4 1 <br>8 5 2<br>9 6 3</span></pre>
+<pre><span style="font-size: 18px;"><strong>Input: </strong>mat[][] = [1 2], [3 4]<br><strong>Output:<br></strong>3 1 <br>4 2<br></span></pre>
+<pre><strong><span style="font-size: 14pt;">Input: </span></strong><span style="font-size: 14pt;">mat[][] = [[1]]<br><strong>Output:<br></strong></span><span style="font-size: 14pt;">1</span></pre>
+<p><span style="font-size: 18px;"><strong style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Constraints:<br></strong></span><span style="font-size: 18px;">1 ≤ mat.size() ≤ 1000<br></span><span style="font-size: 18px;">1 &lt;= mat[][] &lt;= 100</span></p></div>
