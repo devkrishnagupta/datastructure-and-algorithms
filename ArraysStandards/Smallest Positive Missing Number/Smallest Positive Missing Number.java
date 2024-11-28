@@ -5,6 +5,42 @@
 // Approach-2 (Using Sorting)
 // T.C : O(n * logN)
 // S.C : O(1)
+class Solution {
+    // Function to find the smallest positive number missing from the array.
+    public int missingNumber(int[] arr) {
+        // Your code here
+        Arrays.sort(arr);
+        int ans = 1, n = arr.length, idx = 0;
+        
+        while(idx < n){
+            if(arr[idx] == ans)
+                ans++;
+            idx++;
+        }
+        
+        return ans;
+    }
+}
+// Further Optimised
+class Solution {
+    // Function to find the smallest positive number missing from the array.
+    public int missingNumber(int[] arr) {
+        // Your code here
+        Arrays.sort(arr);
+        int ans = 1, n = arr.length, idx = 0;
+        
+        while(idx < n){
+            if(arr[idx] == ans)
+                ans++;
+            else if(arr[idx] > ans)
+                break;
+            idx++;
+        }
+        
+        return ans;
+    }
+}
+
 
 // Approach-3 (Optimal)
 // T.C : O(n)
