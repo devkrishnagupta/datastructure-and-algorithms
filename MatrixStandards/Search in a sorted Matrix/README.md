@@ -1,0 +1,16 @@
+# Search in a sorted Matrix
+## Medium
+<div class="problems_problem_content__Xm_eO"><p><span style="font-size: 14pt;">Given a strictly sorted 2D matrix<strong> mat</strong>[][] of size <strong>n x m&nbsp;</strong>and<strong>&nbsp;</strong>a number&nbsp;<strong>x.</strong> Find whether the number <strong>x</strong> is present in the matrix or not.<br>Note: In a strictly sorted matrix, each row is sorted in strictly increasing order, and&nbsp;the first element of the <strong>i</strong><sup>th</sup>&nbsp;row (<strong>i</strong>!=0) is greater than the last element of the (<strong>i-1</strong>)<sup>th&nbsp;</sup>row.</span><br style="font-size: 18px;"><br><span style="font-size: 14pt;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 14pt;"><strong>Input</strong>: mat[][] = [[1, 5, 9], [14, 20, 21], [30, 34, 43]], x = 14
+<strong>Output</strong>: true
+<strong>Explanation</strong>: 14 is present in the matrix, so output is true.
+</span></pre>
+<pre><span style="font-size: 14pt;"><strong>Input</strong>: mat[][] = [[1, 5, 9, 11], [14, 20, 21, 26], [30, 34, 43, 50]], x = 42<br><strong>Output</strong>: false
+<strong>Explanation</strong>: 42 is not present in the matrix.<br></span></pre>
+<pre><span style="font-size: 14pt;"><strong>Input</strong>: mat[][] = [[87, 96, 99], [101, 103, 111]], x = 101</span><br><span style="font-size: 14pt;"><strong>Output</strong>: true
+<strong>Explanation</strong>: 101 is present in the matrix.</span></pre>
+<p><span style="font-size: 14pt;"><strong>Constraints:<br></strong>1 &lt;= n, m &lt;= 1000<br>1 &lt;= mat[i][j] &lt;= 10<sup>9</sup><br>1 &lt;= x &lt;= 10<sup>9</sup></span></p></div>
+
+<div class="problems_accordion_tags__JJ2DX problems_active_tags__3RExF "><div class="active title problems_active_tag_title__cgl9e"><div class="problems_tag_container__kWANg"><strong>Topic Tags</strong><button class="ui mini circular icon button problems_tag_dropdown__x6C2I"><i aria-hidden="true" class="dropdown icon"></i></button></div></div><div class="ui divider g-m-0"></div><div class="content active"><div class="ui labels"><a href="/explore?category[]=Searching" target="_blank" class="ui label problems_tag_label__A4Ism">Searching</a><a href="/explore?category[]=Matrix" target="_blank" class="ui label problems_tag_label__A4Ism">Matrix</a><a href="/explore?category[]=Data Structures" target="_blank" class="ui label problems_tag_label__A4Ism">Data Structures</a><a href="/explore?category[]=Algorithms" target="_blank" class="ui label problems_tag_label__A4Ism">Algorithms</a></div></div></div>
+
+<div class="problems_accordion_tags__JJ2DX problems_active_tags__3RExF "><div class="active title problems_active_tag_title__cgl9e"><div class="problems_tag_container__kWANg"><strong>Expected Complexities</strong><button class="ui mini circular icon button problems_tag_dropdown__x6C2I"><i aria-hidden="true" class="dropdown icon"></i></button></div></div><div class="ui divider g-m-0"></div><div class="content active"><div class="ui labels"><div target="_blank" class="ui label">Time Complexity: O(log(n×m))</div><div target="_blank" class="ui label">Auxiliary Space: O(1)</div></div></div></div>
