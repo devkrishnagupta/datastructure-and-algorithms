@@ -1,0 +1,17 @@
+# Container With Most Water
+## Medium
+<div class="problems_problem_content__Xm_eO"><p><span style="font-size: 14pt;">Given an array&nbsp;<strong>arr[]&nbsp;</strong>of non-negative integers,&nbsp;where each element <code>arr[i]</code> represents the height of the <strong>vertical lines,&nbsp;</strong>find the <strong>maximum amount of water</strong> that can be contained between any two lines, together with the x-axis.</span></p>
+<p><span style="font-size: 14pt;">Note: In the case of a single vertical line it will not be able to hold water.</span></p>
+<p><span style="font-size: 14pt;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 14pt;"><strong>Input: </strong>arr[] = [1, 5, 4, 3]
+<strong>Output: </strong>6<strong>
+Explanation: </strong>5 and 3 are 2 distance apart. So the size of the base is 2. Height of container = min(5, 3) = 3. So, total area to hold water = 3 * 2 = 6.</span></pre>
+<pre><span style="font-size: 14pt;"><strong>Input: </strong>arr[] = [3, 1, 2, 4, 5]
+<strong>Output: </strong>12<strong>
+Explanation: </strong>5 and 3 are 4 distance apart. So the size of the base is 4. Height of container = min(5, 3) = 3. So, total area to hold water = 4 * 3 = 12.</span></pre>
+<pre><span style="font-size: 14pt;"><strong>Input</strong>: arr[] = [2, 1, 8, 6, 4, 6, 5, 5]<br><strong>Output</strong>: 25 <br><strong>Explanation</strong>: 8 and 5 are 5 distance apart. So the size of the base is 5. Height of container = min(8, 5) = 5. So, the total area to hold water = 5 * 5 = 25.</span></pre>
+<p><span style="font-size: 14pt;"><strong>Constraints:</strong><br>1&lt;= arr.size() &lt;=10<sup>5</sup><br>1&lt;= arr[i] &lt;=10<sup>4</sup></span></p></div>
+
+<div class="problems_accordion_tags__JJ2DX problems_active_tags__3RExF "><div class="active title problems_active_tag_title__cgl9e"><div class="problems_tag_container__kWANg"><strong>Topic Tags</strong><button class="ui mini circular icon button problems_tag_dropdown__x6C2I"><i aria-hidden="true" class="dropdown icon"></i></button></div></div><div class="ui divider g-m-0"></div><div class="content active"><div class="ui labels"><a href="/explore?category[]=Arrays" target="_blank" class="ui label problems_tag_label__A4Ism">Arrays</a><a href="/explore?category[]=Mathematical" target="_blank" class="ui label problems_tag_label__A4Ism">Mathematical</a><a href="/explore?category[]=Puzzles" target="_blank" class="ui label problems_tag_label__A4Ism">Puzzles</a><a href="/explore?category[]=Data Structures" target="_blank" class="ui label problems_tag_label__A4Ism">Data Structures</a><a href="/explore?category[]=Algorithms" target="_blank" class="ui label problems_tag_label__A4Ism">Algorithms</a></div></div></div>
+
+<div class="problems_accordion_tags__JJ2DX problems_active_tags__3RExF "><div class="active title problems_active_tag_title__cgl9e"><div class="problems_tag_container__kWANg"><strong>Expected Complexities</strong><button class="ui mini circular icon button problems_tag_dropdown__x6C2I"><i aria-hidden="true" class="dropdown icon"></i></button></div></div><div class="ui divider g-m-0"></div><div class="content active"><div class="ui labels"><div target="_blank" class="ui label">Time Complexity: O(n)</div><div target="_blank" class="ui label">Auxiliary Space: O(1)</div></div></div></div>
