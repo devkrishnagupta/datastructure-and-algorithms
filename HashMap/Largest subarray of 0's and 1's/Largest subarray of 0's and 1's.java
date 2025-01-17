@@ -1,3 +1,8 @@
+// Approach-1 (Brute Force) // Sub Array that is starting from first for loop
+// T.C : O(n * n)
+// S.C : O(1)
+
+
 // Approach-1
 // T.C : O()
 // S.C : O()
