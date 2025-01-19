@@ -59,3 +59,27 @@ class Solution {
         return ans;
     }
 }
+
+// Approach-3
+class Solution {
+    public Node rotate(Node head, int k) {
+        // add code here
+        int len=1;
+        Node tmp = head;
+        while(tmp.next!=null){
+            len++;
+            tmp=tmp.next;
+        }
+        k=k%len;
+        if(k==0)
+            return head;
+        tmp.next = head;
+        tmp=head;
+        for(int i=1;i<k;i++){
+            tmp=tmp.next;
+        }
+        head = tmp.next;
+        tmp.next = null;
+        return head;
+    }
+}
