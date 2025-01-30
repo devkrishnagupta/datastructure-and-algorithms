@@ -42,6 +42,7 @@ public class NQueensONChessBoard {
 
     private static boolean isValid(int[][] mat, int i, int j, int N) {
         //No need to check row
+        //check in vertical column
         int x=i,y=j;
         while(x>=0){
             int kk=0;
