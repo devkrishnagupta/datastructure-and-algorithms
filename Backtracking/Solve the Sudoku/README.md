@@ -1,0 +1,22 @@
+# Solve the Sudoku
+## Hard
+<div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">Given an&nbsp;incomplete&nbsp;<a href="https://www.geeksforgeeks.org/introduction-to-sudoku-puzzles-and-how-to-solve-them/"><strong>Sudoku</strong></a> configuration in terms of a 9x9&nbsp; 2-D interger square matrix, <strong>mat[][]</strong>, the task is to solve the Sudoku.&nbsp;</span><span style="font-size: 18px;">It is <strong>guaranteed </strong>that the input Sudoku will have exactly <strong>one </strong>solution.</span></p>
+<p><span style="font-size: 18px;">A sudoku solution must satisfy&nbsp;all of the following rules:</span></p>
+<ol>
+<li><span style="font-size: 18px;">Each of the digits&nbsp;<code>1-9</code>&nbsp;must occur exactly once in each row.</span></li>
+<li><span style="font-size: 18px;">Each of the digits&nbsp;<code>1-9</code>&nbsp;must occur exactly once in each column.</span></li>
+<li><span style="font-size: 18px;">Each of the digits&nbsp;<code>1-9</code>&nbsp;must occur exactly once in each of the 9&nbsp;<code>3x3</code>&nbsp;sub-boxes of the grid.</span></li>
+</ol>
+<p><span style="font-size: 18px;"><strong>Note:</strong> Zeros represent blanks to be filled with numbers 1-9, while non-zero cells are <strong>fixed </strong>and cannot be changed.</span><span style="font-size: 18px;"><br></span></p>
+<p><strong><span style="font-size: 18px;">Examples:</span></strong></p>
+<pre><strong><span style="font-size: 18px;">Input: </span></strong><span style="font-size: 18px;">mat[][] = 
+</span><span style="font-size: 18px;"><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/701375/Web/Other/blobid0_1738306620.png" alt="" width="260" height="212">
+</span><strong style="font-size: 18px;">Output:</strong><span style="font-size: 18px;">
+<img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/701375/Web/Other/blobid0_1738306722.png" alt="" width="258" height="203"><br></span><strong style="font-size: 18px;">Explanation:</strong><span style="font-size: 18px;"> Each row, column and 3 x 3 box of the output matrix contains unique numbers.</span></pre>
+<pre><strong><span style="font-size: 18px;">Input: </span></strong><span style="font-size: 18px;">mat[][] = 
+</span><span style="font-size: 18px;"><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/886267/Web/Other/blobid1_1738136756.png" alt="" width="262" height="209"><br></span><strong style="font-size: 18px;">Output:</strong><br><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/701375/Web/Other/blobid0_1738306722.png" alt="" width="258" height="203"><br><strong style="font-size: 18px;">Explanation:</strong><span style="font-size: 18px;"> Each row, column and 3 x 3 box of the output matrix contains unique numbers.</span></pre>
+<p><span style="font-size: 18px;"><strong>Constraints:</strong><br>mat.size() = 9<br>mat[i].size() = 9<br>0 ≤ mat[i][j] ≤ 9<br></span></p></div>
+
+<div class="problems_accordion_tags__JJ2DX problems_active_tags__3RExF "><div class="active title problems_active_tag_title__cgl9e"><div class="problems_tag_container__kWANg"><strong>Topic Tags</strong><button class="ui mini circular icon button problems_tag_dropdown__x6C2I"><i aria-hidden="true" class="dropdown icon"></i></button></div></div><div class="ui divider g-m-0"></div><div class="content active"><div class="ui labels"><a href="/explore?category[]=Matrix" target="_blank" class="ui label problems_tag_label__A4Ism">Matrix</a><a href="/explore?category[]=Backtracking" target="_blank" class="ui label problems_tag_label__A4Ism">Backtracking</a><a href="/explore?category[]=Data Structures" target="_blank" class="ui label problems_tag_label__A4Ism">Data Structures</a><a href="/explore?category[]=Algorithms" target="_blank" class="ui label problems_tag_label__A4Ism">Algorithms</a></div></div></div>
+
+<div class="problems_accordion_tags__JJ2DX problems_active_tags__3RExF "><div class="active title problems_active_tag_title__cgl9e"><div class="problems_tag_container__kWANg"><strong>Expected Complexities</strong><button class="ui mini circular icon button problems_tag_dropdown__x6C2I"><i aria-hidden="true" class="dropdown icon"></i></button></div></div><div class="ui divider g-m-0"></div><div class="content active"><div class="ui labels"><div target="_blank" class="ui label">Time Complexity: O(9 ^ (n * n))</div><div target="_blank" class="ui label">Auxiliary Space: O(n)</div></div></div></div>
