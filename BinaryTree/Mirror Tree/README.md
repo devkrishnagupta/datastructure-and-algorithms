@@ -1,0 +1,16 @@
+# Mirror Tree
+## Easy
+<div class="problems_problem_content__Xm_eO"><p><span style="font-size: 18px;">Given a binary tree, convert the binary tree to its Mirror tree. </span></p>
+<p><span style="font-size: 18px;">Mirror of a Binary Tree T is another Binary Tree M(T) with left and right children of all non-leaf nodes interchanged.&nbsp; &nbsp; &nbsp;</span></p>
+<p><span style="font-size: 18px;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 18px;"><strong style="font-size: 18px;">Input: </strong><span style="font-size: 18px;">root[] = [1, 2, 3, N, N, 4]
+</span><strong style="font-size: 18px;">Output: </strong><span style="font-size: 18px;">[1, 3, 2, N, 4]</span><strong style="font-size: 18px;">
+Explanation: </strong><span style="font-size: 18px;"><br><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/700155/Web/Other/blobid0_1736926809.png" alt="" width="523" height="262"><br>In the inverted tree, every non-leaf node has its left and right child interchanged.</span></span></pre>
+<pre><span style="font-size: 18px;"><strong style="font-size: 18px;">Input: </strong><span style="font-size: 18px;">root[] = [1, 2, 3, 4, 5]
+</span><strong style="font-size: 18px;">Output: </strong><span style="font-size: 18px;">[1, 3, 2, N, N, 5, 4]</span><strong style="font-size: 18px;">
+Explanation:<br></strong><span style="font-size: 18px;"><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/700155/Web/Other/blobid1_1736926809.png" alt="" width="525" height="263"><br>In the inverted tree, every non-leaf node has its left and right child interchanged.</span></span></pre>
+<p><span style="font-size: 18px;"><strong>Constraints:</strong><br>1 ≤ number of nodes ≤ 10<sup>5</sup><br>1 ≤ node-&gt;data ≤ 10<sup>5</sup></span></p></div>
+
+<div class="problems_accordion_tags__JJ2DX problems_active_tags__3RExF "><div class="active title problems_active_tag_title__cgl9e"><div class="problems_tag_container__kWANg"><strong>Topic Tags</strong><button class="ui mini circular icon button problems_tag_dropdown__x6C2I"><i aria-hidden="true" class="dropdown icon"></i></button></div></div><div class="ui divider g-m-0"></div><div class="content active"><div class="ui labels"><a href="/explore?category[]=Tree" target="_blank" class="ui label problems_tag_label__A4Ism">Tree</a><a href="/explore?category[]=Data Structures" target="_blank" class="ui label problems_tag_label__A4Ism">Data Structures</a></div></div></div>
+
+<div class="problems_accordion_tags__JJ2DX problems_active_tags__3RExF "><div class="active title problems_active_tag_title__cgl9e"><div class="problems_tag_container__kWANg"><strong>Expected Complexities</strong><button class="ui mini circular icon button problems_tag_dropdown__x6C2I"><i aria-hidden="true" class="dropdown icon"></i></button></div></div><div class="ui divider g-m-0"></div><div class="content active"><div class="ui labels"><div target="_blank" class="ui label">Time Complexity: O(n)</div><div target="_blank" class="ui label">Auxiliary Space: O(1)</div></div></div></div>
