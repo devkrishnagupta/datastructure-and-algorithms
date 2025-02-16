@@ -25,3 +25,6 @@
 <p><span style="font-size: 18px;"><strong>Your Task:</strong><br>The task is to complete two&nbsp;functions<strong> serialize</strong> which takes the root node of the tree as input and stores the tree into an array&nbsp;and <strong>deSerialize</strong> which deserializes the array to the original tree and returns the root of it.</span></p>
 <p><span style="font-size: 18px;"><strong>Expected Time Complexity:&nbsp;</strong>O(Number of nodes).<br><strong>Expected Auxiliary Space:&nbsp;</strong>O(Number of nodes).</span></p>
 <p><span style="font-size: 18px;"><strong>Constraints:</strong><br>1 &lt;= Number of nodes &lt;= 10<sup>4</sup><br>1 &lt;= Data of a node &lt;= 10<sup>9</sup></span></p></div>
+
+
+<div class="problems_accordion_tags__JJ2DX problems_active_tags__3RExF "><div class="active title problems_active_tag_title__cgl9e"><div class="problems_tag_container__kWANg"><strong>Expected Complexities</strong><button class="ui mini circular icon button problems_tag_dropdown__x6C2I"><i aria-hidden="true" class="dropdown icon"></i></button></div></div><div class="ui divider g-m-0"></div><div class="content active"><div class="ui labels"><div target="_blank" class="ui label">Time Complexity: O(n)</div><div target="_blank" class="ui label">Auxiliary Space: O(n)</div></div></div></div>
