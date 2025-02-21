@@ -46,3 +46,28 @@ class Solution {
         return st.isEmpty();
     }
 }
+
+// Approach-1
+// T.C : O(n)
+// S.C : O(n)
+class Solution {
+    static boolean isBalanced(String s) {
+        // code here
+        Stack<Character> st = new Stack<>();
+        for(char ch: s.toCharArray()){
+            if(ch == ')'){
+                if(st.isEmpty() || st.peek() != '(') return false;
+                st.pop();
+            }else if(ch == '}'){
+                if(st.isEmpty() || st.peek() != '{') return false;
+                st.pop();
+            }else if(ch == ']'){
+                if(st.isEmpty() || st.peek() != '[') return false;
+                st.pop();
+            }else{
+                st.push(ch);
+            }
+        }
+        return st.isEmpty();
+    }
+}
