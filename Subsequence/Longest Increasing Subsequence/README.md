@@ -1,1 +1,18 @@
 # Longest Increasing Subsequence
+<div class="problems_problem_content__Xm_eO"><p><span style="font-size: 14pt;">Given an array <strong><code>arr[]</code></strong> of non-negative integers, the task is to find the <strong>length</strong> of the <strong>Longest Strictly Increasing Subsequence (LIS)</strong>.</span></p>
+<p><span style="font-size: 14pt;">A subsequence is <strong>strictly increasing</strong> if each element in the subsequence is strictly less than the next element.</span></p>
+<p><span style="font-size: 14pt;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 14pt;"><strong>Input: </strong>arr<span class="hljs-selector-attr">[]</span> = <span class="hljs-selector-attr">[5, 8, 3, 7, 9, 1]</span>
+<strong>Output: </strong>3<strong>
+Explanation: </strong>The longest strictly increasing subsequence could be <code>[5, 7, 9]</code><span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">, which has a length of 3.</span></span></pre>
+<pre><span style="font-size: 14pt;"><strong>Input: </strong>arr[] = [0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15]
+<strong>Output: </strong>6<strong>
+Explanation: </strong>One of the possible longest strictly increasing subsequences is <code>[0, 2, 6, 9, 13, 15]</code><span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">, which has a length of 6.</span></span></pre>
+<pre><span style="font-size: 14pt;"><strong>Input: </strong>arr[] = [3, 10, 2, 1, 20]
+<strong>Output: </strong>3<strong>
+Explanation: </strong>The longest strictly increasing subsequence could be <code>[3, 10, 20]</code><span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">, which has a length of 3.</span></span></pre>
+<p><span style="font-size: 14pt;"><strong>Constraints:</strong></span><br><span style="font-size: 14pt;">1 ≤ arr.size() ≤ 10<sup>3</sup><br>0 ≤ arr[i] ≤ 10<sup>6</sup></span></p></div>
+
+<div class="problems_accordion_tags__JJ2DX problems_active_tags__3RExF "><div class="active title problems_active_tag_title__cgl9e"><div class="problems_tag_container__kWANg"><strong>Topic Tags</strong><button class="ui mini circular icon button problems_tag_dropdown__x6C2I"><i aria-hidden="true" class="dropdown icon"></i></button></div></div><div class="ui divider g-m-0"></div><div class="content active"><div class="ui labels"><a href="/explore?category[]=Dynamic Programming" target="_blank" class="ui label problems_tag_label__A4Ism">Dynamic Programming</a><a href="/explore?category[]=Binary Search" target="_blank" class="ui label problems_tag_label__A4Ism">Binary Search</a><a href="/explore?category[]=Algorithms" target="_blank" class="ui label problems_tag_label__A4Ism">Algorithms</a></div></div></div>
+
+<div class="problems_accordion_tags__JJ2DX problems_active_tags__3RExF "><div class="active title problems_active_tag_title__cgl9e"><div class="problems_tag_container__kWANg"><strong>Expected Complexities</strong><button class="ui mini circular icon button problems_tag_dropdown__x6C2I"><i aria-hidden="true" class="dropdown icon"></i></button></div></div><div class="ui divider g-m-0"></div><div class="content active"><div class="ui labels"><div target="_blank" class="ui label">Time Complexity: O(n log n)</div><div target="_blank" class="ui label">Auxiliary Space: O(n)</div></div></div></div>
