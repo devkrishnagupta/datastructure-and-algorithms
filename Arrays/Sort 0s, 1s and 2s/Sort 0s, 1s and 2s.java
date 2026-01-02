@@ -9,7 +9,7 @@ class Solution {
     }
 }
 
-// Approach-1
+// Approach-2
 // T.C : O(n)
 // S.C : O(1)
 //count zero, one and two then insert after counting
