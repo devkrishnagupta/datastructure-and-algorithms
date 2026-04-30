@@ -1,0 +1,12 @@
+# Check if an Array is Max Heap
+## Easy
+<div class="problems_problem_content__Xm_eO" style="--text-color: var(--problem-text-color);"><p><span style="font-size: 18px;">Given an array <strong>arr[]</strong>, determine whether it represents the <strong>level-order</strong> traversal of a valid <a href="https://www.geeksforgeeks.org/dsa/difference-between-min-heap-and-max-heap/">max heap</a>. Return <strong>true</strong> if it does; otherwise, return <strong>false</strong>.</span></p>
+<p><span style="font-size: 18px;"><strong>Examples :</strong></span></p>
+<pre><span style="font-size: 18px;"><strong>Input: </strong>arr[] = [90, 15, 10, 7, 12, 2]
+<strong>Output: </strong>true<br><strong>Explanation:</strong> The given array represents the following tree. Each parent node is greater than or equal to its children, so the max-heap property holds.<br><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/926700/Web/Other/blobid0_1776675962.png" width="250" height="184"> </span></pre>
+<pre><span style="font-size: 18px;"><strong>Input: </strong>arr[] = [9, 15, 10, 7, 12, 11]
+<strong>Output: </strong>false
+<strong>Explanation: </strong>The given array represents the following tree. It does not satisfy the max-heap property, as 9 is smaller than 15 and 10, and 10 is smaller than 11.<br> <img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/926700/Web/Other/blobid1_1776676550.png" width="250" height="184"></span></pre>
+<p><span style="font-size: 18px;"><strong>Constraints:</strong><br>1 ≤ n ≤ 10<sup>5</sup><br>1 ≤ arr[i] ≤ 10<sup>5</sup></span></p></div>
+
+<div class="problems_accordion_tags__JJ2DX problems_active_tags__3RExF"><div class="active title problems_active_tag_title__cgl9e"><div class="problems_tag_container__kWANg"><strong>Topic Tags</strong><button class="ui mini circular button problems_tag_dropdown__x6C2I problems_rotate__oQqED"><img src="https://media.geeksforgeeks.org/img-practice/prod/teams/45678/Web/Menu/Vector%20(1)_1776855167.png" alt="Dropdown Icon"></button></div></div><div class="content active animated_content open"><div class="ui labels"><a href="/explore?category[]=Arrays" target="_blank" class="ui label problems_tag_label__A4Ism">Arrays</a><a href="/explore?category[]=Binary Search Tree" target="_blank" class="ui label problems_tag_label__A4Ism">Binary Search Tree</a><a href="/explore?category[]=Data Structures" target="_blank" class="ui label problems_tag_label__A4Ism">Data Structures</a></div></div></div>
