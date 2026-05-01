@@ -1,1 +1,1 @@
-# Heaps Questions Based on DSA Concepts!
+# MinHeap Questions Based on DSA Concepts!
