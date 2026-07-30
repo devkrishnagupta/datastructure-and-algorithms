@@ -1,0 +1,10 @@
+# Maximum Subset XOR
+## Medium
+<div class="problems_problem_content__Xm_eO" style="--text-color: var(--problem-text-color);"><p><span style="font-size: 18px;">Given an array <strong>arr[]</strong>, choose any subset of elements (possibly all elements) such that the XOR of the chosen elements is maximized.</span></p>
+<p><span style="font-size: 18px;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 18px;"><strong>Input : </strong>arr[] = [2, 4, 5]<br><strong>Output: </strong>7<br><strong>Explanation: </strong>The subset {2, 5} has the maximum XOR value.</span></pre>
+<pre><strong style="font-size: 18px;">Input : </strong><span style="font-size: 18px;">arr[] = [9, 8, 5]<br><strong>Output: </strong>13<strong><br>Explanation: </strong>The subset {8, 5} has the maximum XOR value.</span></pre></div>
+
+<div class="problems_problem_content__Xm_eO" style="--text-color: var(--problem-text-color);"><p><strong>Constraints:</strong></p><span>1 ≤ arr.size() ≤ <span>10<sup>5</sup></span><br></span><span>1 ≤ arr[i] ≤ <span>10<sup>6</sup></span><br></span></div>
+
+<div class="problems_accordion_tags__JJ2DX problems_active_tags__3RExF"><div class="active title problems_active_tag_title__cgl9e"><div class="problems_tag_container__kWANg"><strong>Expected Complexities</strong><button class="ui mini circular button problems_tag_dropdown__x6C2I problems_rotate__oQqED"><img src="https://media.geeksforgeeks.org/img-practice/prod/teams/45678/Web/Menu/Vector%20(1)_1776855167.png" alt="Dropdown Icon"></button></div></div><div class="content active animated_content open"><div class="problems_expected_complexities_text__h_eyi"><div class="problems_normal_text__QiKrb">Time Complexity: O(n * log(max(arr[i])))</div><div class="problems_normal_text__QiKrb">Auxiliary Space: O(1)</div></div></div></div>
